@@ -186,17 +186,69 @@ section {
   margin: 0 auto;
 }
 .section5 ul li {
+  position: relative;
   float: left;
-  /* border: 1px solid #000; */
   width: 18%;
-  height: 100px;
-  margin: 2% 1.8% 0 0%;
+  height: 140px;
+  margin: 1.5% 1.5% 0 0%;
   background-color: #fff;
-  border: 1px solid #666;
+  border-radius: 10px;
   text-align: center;
   line-height: 100px;
 }
 .section5 ul li img {
-  border: 1px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* section5 end */
+
+/* section6 start */
+.section6 .link_box {
+  float: left;
+  width: 50%;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+.section6 .link_box:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.section6 .link_box:first-child:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/employment.jpg) no-repeat left top fixed;
+  z-index: -1;
+}
+.section6 .link_box:last-child:after {
+  background: url(../img/contact.jpg) no-repeat right top fixed;
+}
+.link_box .text_box {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.link_box .text_box div,
+.link_box .text_box p {
+  font-size: 0.7vw;
+  line-height: 1.2vw;
+}
+.link_box .text_box h2 {font-size: 1.5vw;}
+.link_box .text_box h2 i {margin-left: 25px;}
+.link_box .text_box p {margin-top: 60px;}
+/* section6 end */

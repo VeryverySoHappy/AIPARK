@@ -1,3 +1,4 @@
+/* header start */
 #wrapper {
   width: 100%;
   position: relative;
@@ -29,3 +30,61 @@ header .menu_btn {
   top: 50%;
   transform: translateY(-50%);
 }
+/* header end */
+
+/* footer start */
+footer {background-color: #fcfcfc;}
+.footer_top {
+  width: 90%;
+  padding: 2%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+}
+.footer_top ul:first-child {
+  width: 85%;
+  float: left;
+}
+.footer_top ul:last-child {
+  float: right;
+  width: 15%;
+}
+.footer_top ul li {
+  float: left;
+}
+.footer_top ul:first-child li:nth-child(2) {padding: 0 3%;}
+.footer_top ul:last-child li:nth-child(2) {padding: 0 15%;}
+.footer_top ul li a {
+  font-size: 0.8vw;
+  font-weight: bold;
+}
+.footer_top .sns_link .youtube {
+  background: url(../img/youtube-brands.svg) no-repeat center;
+  width: 100%;
+  height: auto;
+  text-indent: -9999px;
+}
+.footer_top .sns_link .notion {
+  background: url(../img/notion.png) no-repeat center;
+  width: 100%;
+  height: auto;
+  text-indent: -9999px;
+  position: absolute;
+  top: 0;
+}
+.footer_top .sns_link .linkedin {
+  background: url(../img/linkedin-brands.svg) no-repeat center;
+  width: 100%;
+  height: auto;
+}
+footer address,
+footer p {
+  width: 90%;
+  margin: 1.5% auto 3.5% auto;
+  font-size: .8vw;
+  line-height: 1.3vw;
+}
+footer p {
+  padding-bottom: 2%;
+  color: #a4a4a4;
+}
+/* footer end */
