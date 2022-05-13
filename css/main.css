@@ -48,8 +48,6 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
-  height: 80%;
-  border: 1px solid #000;
 }
 .section2_inner h2 {
   font-size: 3vw;
@@ -63,7 +61,6 @@ section {
   width: 90%;
   height: 50%;
   margin: 8% auto 0 auto;
-  border: 1px solid #000;
 }
 .section2 ul li {
   float: left;
@@ -71,14 +68,239 @@ section {
   text-align: center;
 }
 .section2_inner ul li:last-child {padding-right: 0;}
+.service .img_wrap {position: relative;}
 .service img {
-  width: 50%;
-  height: auto;
+  width: auto; 
+  height: 110px;
+}
+.gra_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  padding: 1%;
+  border-radius: 6px;
+  background: linear-gradient(-45deg, #004cf8, #0dfe1e);
+  background-size: 300% 300%;
+  animation: AnimationName 10s ease infinite;
+  color: #fff;
+  font-size: .8vw;
+}
+.service .img_wrap .gra_circle {
+  position: absolute;
+  top: -22%;
+  right: 30%;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: linear-gradient(-45deg, #004cf8, #0dfe1e);
+  background-size: 300% 300%;
+  animation: AnimationName 10s ease infinite;
+  z-index: -10;
+}
+.service:last-child .img_wrap .gra_circle {
+  right: 25%;
+  width: 80px;
+  height: 80px;
+}
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 .service h3 {
   font-size: 2vw;
-  margin-bottom: 5%;
+  line-height: 3vw;
+  margin-bottom: 7%;
 }
+
+/* section2 media start */
+@media screen and (max-width:2400px) {
+  .section2_inner h2 {
+    font-size: 3.5vw;
+  }
+  .gra_text {
+    width: 50%;
+    font-size: 1.2vw;
+  }
+  .service .img_wrap .gra_circle {
+    top: -25%;
+    right: 27%;
+  }
+  .service:last-child .img_wrap .gra_circle {
+    right: 20%;
+  }
+}
+@media screen and (max-width:1600px) {
+  .section2_inner p {
+    margin-top: 2%;
+    font-size: 1.3vw;
+    line-height: 2vw;
+  }
+  .gra_text {
+    width: 68%;
+    font-size: 1.3vw;
+    padding: 1.5%;
+  }
+  .service .img_wrap .gra_circle {
+    right: 17%;
+  }
+  .service:last-child .img_wrap .gra_circle {
+    right: 5%;
+  }
+}
+@media screen and (max-width:1024px) {
+  .section2_inner h2 {
+    font-size: 6vw;
+  }
+  .section2_inner p {
+    margin-top: 1%;
+    font-size: 1.4vw;
+    line-height: 2.5vw;
+  }
+  .section2_inner ul {
+    width: 90%;
+    height: 50%;
+    margin: 15% auto 0 auto;
+  }
+  .section2 ul li {
+    width: calc(100%/4);
+    margin-bottom: 8%;
+  }
+  .gra_text {
+    width: 100%;
+    font-size: 2.5vw;
+  }
+  .service .img_wrap .gra_circle {
+    right: 8%;
+  }
+  .service:last-child .img_wrap .gra_circle {
+    right: -20%;
+  }
+  .service h3 {
+    font-size: 2.5vw;
+    line-height: 6vw;
+    margin-bottom: 2%;
+  }
+}
+@media screen and (max-width:768px) {
+  .section2_inner {
+    width: 90%;
+  }
+  .section2_inner h2 {
+    font-size: 8vw;
+  }
+  .section2_inner p {
+    margin-top: 2%;
+    font-size: 2.5vw;
+    line-height: 4.5vw;
+  }
+  .section2_inner ul {
+    width: 100%;
+    margin: 20% auto 0 auto;
+  }
+  .section2 ul li {
+    margin-bottom: 7%;
+  }
+  .service .img_wrap .gra_circle {
+    top: -28%;
+    right: -5%;
+  }
+  .service h3 {
+    font-size: 3vw;
+    line-height: 8vw;
+    margin-bottom: 4.2%;
+  }
+}
+@media screen and (max-width:450px) {
+  .section2_inner h2 {
+    font-size: 10vw;
+  }
+  .section2_inner p {
+    margin-top: 3.5%;
+    font-size: 2.9vw;
+    line-height: 5vw;
+  }
+  .section2_inner ul {
+    margin: 15% auto 0 auto;
+  }
+  .section2_inner ul li {
+    width: calc(100%/2);
+    margin-bottom: 15%;
+  }
+  .gra_text {
+    width: 78%;
+    font-size: 4.3vw;
+    padding: 4%;
+  }
+  .service .img_wrap .gra_circle {
+    top: -20%;
+    right: 8%;
+  }
+  .service:last-child .img_wrap .gra_circle {
+    right: 0%;
+  }
+}
+@media screen and (max-width:300px) {
+  .section2 {
+    height: 200vh;
+  }
+  .section2_inner h2 {
+    font-size: 11vw;
+  }
+  .section2_inner p {
+    margin-top: 3.5%;
+    font-size: 3.7vw;
+    line-height: 6.5vw;
+  }
+  .section2 ul li {
+    width: calc(100%/1);
+    margin-bottom: 15%;
+  }
+  .gra_text {
+    width: 50%;
+    font-size: 6vw;
+    padding: 2%;
+  }
+  .service .img_wrap .gra_circle {
+    top: -22%;
+    right: 22%;
+  }
+  .service:last-child .img_wrap .gra_circle {
+    top: -30%;
+    right: 8%;
+  }
+  .service img {
+    width: auto; 
+    height: 100px;
+  }
+  .service h3 {
+    font-size: 8vw;
+    line-height: 12vw;
+    margin-bottom: 5.5%;
+  }
+  .service p {
+    font-size: 5vw;
+    line-height: 8vw;
+  }
+}
+/* section2 media end */
 /* section 2 end */
 
 /* section3 start */
@@ -92,6 +314,7 @@ section {
   top: 28%;
   left: 10%;
   color: #fff;
+  z-index: 1;
 }
 .section3 .text_wrap h2 {
   font-size: 5.5vw;
@@ -127,6 +350,60 @@ section {
 .section3 a:active {
   background-color: rgba(255, 255, 255, 0.3);
 }
+/* section3 media start */
+@media screen and (max-width:1600px) {
+  .section3 .text_wrap {
+    top: 32%;
+  }
+  .section3 .text_wrap h2 {
+    font-size: 6.5vw;
+  }
+  .section3 .text_wrap h2 span {font-size: 1.5vw;}
+  .section3 .text_wrap h3 {
+    margin-top: 4%;
+    font-size: 1.7vw;
+    line-height: 2.8vw;
+  }
+  .section3 .text_wrap div {
+    margin-top: 2%;
+    font-size: 1.2vw;
+  }
+  .section3 img {
+    position: absolute;
+    height: 80%;
+    bottom: 0;
+    right: 0;
+    margin-right: 0;
+  }
+  .section3 a {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width:1023px) {
+  .section3 {
+    overflow: hidden;
+    position: relative;
+  }
+  .section3 .text_wrap {
+    float: left;
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+    color: #fff;
+    z-index: 1;
+  }
+  .section3 img {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    right: -25%;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width:768px) {}
+@media screen and (max-width:450px) {}
+@media screen and (max-width:300px) {}
+/* section3 media end */
 /* section3 end */
 
 /* section4 start */
